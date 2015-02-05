@@ -1,18 +1,27 @@
 header{
 	background-color: #58D3F7;
-	width: 99%
+	width: 99%;
 	position: fixed;
+	margin-top: 0px;
 }
-
-section{
-	background-color: #58FA58;
-	width: 20%;
-	float: right;
-}
-
 
 footer{
-	background-color: #D8D8D8;
-	width: 99%;
+	background-color: #FFBF00;
+	width: 90%;
+	clear: both;
+}
+
+.seccioniz{
+	background-color: #58FA58;
+	width: 30%;
+	margin-top: 50px;
+	float: left;
+	clear: both;
+}
+
+.seccionder{
+	background-color: #BE81F7;
+	width: 30%;
+	float: right;
 	clear: both;
 }
