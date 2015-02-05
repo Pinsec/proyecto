@@ -1,0 +1,18 @@
+header{
+	background-color: #58D3F7;
+	width: 99%
+	position: fixed;
+}
+
+section{
+	background-color: #58FA58;
+	width: 20%;
+	float: right;
+}
+
+
+footer{
+	background-color: #D8D8D8;
+	width: 99%;
+	clear: both;
+}
