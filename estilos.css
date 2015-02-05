@@ -11,17 +11,15 @@ footer{
 	clear: both;
 }
 
-.seccioniz{
+section{
+	background-color: #E6E6E6;
+	width: 39%;
+	float: left;
+}
+
+aside{
 	background-color: #58FA58;
 	width: 30%;
 	margin-top: 50px;
 	float: left;
-	clear: both;
-}
-
-.seccionder{
-	background-color: #BE81F7;
-	width: 30%;
-	float: right;
-	clear: both;
 }
