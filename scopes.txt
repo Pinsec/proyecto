@@ -1,0 +1,28 @@
+Scopes en JavaScript
+
+De acuerdo con su traducción literaria, el "scope" es el alcance de una variable. Este determina en qué parte del código puede ser utilizada cierta variable, dependiendo de cómo y en qué sitio fue declarada.
+
+Las variables declaradas fuera de código, tienen un alcance global, lo que quiere decir que su valor puede ser usado o reasignado en cualquier otra función.
+
+<script>
+	var global = 900;
+	unafuncion();
+	otrafuncion();
+	function unafuncion(){
+		document.getElementById("identificador_1").innerHTML = global;
+	}
+	function otrafuncion(){
+		global=500;
+		document.getElementById("identificador_2").innerHTML = global;
+	}
+</script>
+
+En el ejemplo anterior, vemos que el scope de "global" es... global. El script indica que "unafuncion()" va a modificar el contenido de la etiqueta con id "identificador_1" y se despliegue el valor de "global". Mientras que en "otrafuncion()" modificamos el valor de "global" y cambiamos el contenido de una etiqueta con id "identificador_2" por el nuevo contenido de "global"
+
+Al igual que en otros lenguajes de programación, en Javascript, el tiempo de vida de una variable inicia en el momento en el que ésta se declara.
+
+Una variable global deja de existir hasta que la página es cerrada
+
+Las variables locales son eliminadas cuando la función ha finalizado, lo cual permite usar identificadores iguales pero en funciones diferentes. Esto mismo ocasiona que, si se intenta asignar o desplegar el valor de una variable dentro de una función fuera de su alcance, se obtendrán resultados inesperados.
+Las variables que funcionan como argumentos de las funciones son consideradas como locales también.
+
